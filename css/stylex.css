@@ -50,7 +50,7 @@ body {
     margin-right: auto;
     padding: 2rem;
     width: 60%;
-    height: 140vh;
+    height: 100vh;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -61,6 +61,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 3rem;
     /* padding: .8rem; */
     
 }
