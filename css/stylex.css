@@ -15,15 +15,31 @@ body {
     }
 
     .main {
-        display: block;
-        width: 100vw;
-        margin: 0;
-        padding: 5rem;
+        width: 100% !important;
+        padding: 0 !important;
+        border: 1px solid black;
+        
 
+    }
+
+    .tab {
+        font-size: 1rem !important;
+    }
+
+    .form-control {
+        padding: .5rem !important;
+    }
+
+    input, select {
+        padding: .8rem !important;
+    }
+
+    .btn {
+        font-size: 1.2rem !important;
     }
     
     .form {
-        width: 100%;
+        font-size: 3.5rem !important;
     }
 }
 
@@ -33,28 +49,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 2rem;
-    width: 50%;
-    height: 110vh;
+    width: 60%;
+    height: 140vh;
     background-color: #fff;
     border-radius: 10px;
 }
 
 .tab {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: .8rem;
+    /* padding: .8rem; */
     
 }
 
 
 .tablink {
-    padding: 8px;
+    padding: 1rem;
     border: none;
     cursor: pointer;
     font-weight: 700;
+    border-bottom: 1px solid #555;
     background-color: #fff;
     text-transform: uppercase;
 }
@@ -72,7 +89,7 @@ body {
 
 .form {
     width: 100%;
-    font-size: 4.5rem;
+    font-size: 3rem;
 }
 
 label {
@@ -92,11 +109,36 @@ label {
 input, select {
     width: 80%;
     border: none;
-    padding: 1rem;
+    padding: .5rem;
     outline: none;
     border-bottom: 1px solid black;
 }
 
+.choose-file {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file {
+    width: 20%;
+    border: none;
+}
+
+
+/* .webcam {
+    border: 1px solid #555;
+    padding: 2px;
+    width: 50px;
+    border-radius: 2px;
+} */
+
+
+#my_camera{
+    width: 80px;
+    height: 50px;
+    margin-left: 10rem;
+    border: 1px solid black;
+}
 
 #AppInfo {
     margin-bottom: 2rem;
@@ -106,13 +148,15 @@ input, select {
 .btn-container {
     margin-top: 4rem;
     margin-left: 20rem;
-    width: 30%;
+    width: 15%;
 
 }
+
+
 .btn {
     width: 100%;
-    font-size: 1.6rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: .8rem;
     border: none;
     background-color: green;
     color: #fff;
