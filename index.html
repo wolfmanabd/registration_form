@@ -248,7 +248,7 @@
                     <label for="Choose file">Choose file:</label>
                     <input type="file" placeholder="Choose file" class="file">
                     <div id="my_camera"></div>
-                    <button onclick="take_snapshot()">Take Snapshot</button>
+                    <button onClick="take_snapshot()">Take PIc</button>
                     
                     <div id="results" ></div>
                 </div>
@@ -358,10 +358,37 @@
                 </div>
             </div>
         </form>
+        
     </section>
 
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        Webcam.set({
+            width: 100,
+            height: 80,
+            image_format: 'jpeg',
+            jpeg_quality: 90
+        });
+        Webcam.attach( '#my_camera' );
+
+        // preload shutter audio clip
+        var shutter = new Audio();
+        shutter.autoplay = true;
+        shutter.src = navigator.userAgent.match(/Firefox/) ? 'shutter.ogg' : 'shutter.mp3';
+
+        function take_snapshot() {
+        // play sound effect
+        shutter.play();
+
+        // take snapshot and get image data
+        Webcam.snap( function(data_uri) {
+            // display results in page
+            document.getElementById('results').innerHTML = 
+                '<img src="'+data_uri+'"/>';
+        });
+        }
+    </script>
 </body>
 
 </html>

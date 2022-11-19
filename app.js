@@ -23,9 +23,9 @@ function openPage(pageName, elmnt, color) {
   document.getElementById("defaultOpen").click();
 
 
-  Webcam.set({
-    width: 80,
-    height: 50,
+Webcam.set({
+    width: 320,
+    height: 240,
     image_format: 'jpeg',
     jpeg_quality: 90
 });

@@ -17,7 +17,7 @@ body {
     .main {
         width: 100% !important;
         padding: 0 !important;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         
 
     }
@@ -114,10 +114,10 @@ input, select {
     border-bottom: 1px solid black;
 }
 
-.choose-file {
+/* .choose-file {
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-between; */
+/* } */
 
 .file {
     width: 20%;
@@ -125,17 +125,17 @@ input, select {
 }
 
 
-/* .webcam {
+ .webcam {
     border: 1px solid #555;
     padding: 2px;
     width: 50px;
     border-radius: 2px;
-} */
+} 
 
 
 #my_camera{
-    width: 80px;
-    height: 50px;
+    width: 100px;
+    height: 80px;
     margin-left: 10rem;
     border: 1px solid black;
 }
