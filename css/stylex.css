@@ -48,6 +48,10 @@ body {
     .form {
         font-size: 3.5rem !important;
     }
+
+    .page-link {
+        font-size: 1.2rem !important;
+    }
 }
 
 
@@ -151,8 +155,8 @@ input, select {
 
 
 #my_camera{
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
     margin-right: .8rem;
     border: 1px solid black;
 }
