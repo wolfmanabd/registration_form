@@ -207,6 +207,7 @@ input, select {
     font-size: 1.3rem;
     padding: .8rem;
     border: none;
+    border-radius: 5px;
     background-color: green;
     color: #fff;
     text-align: center;
