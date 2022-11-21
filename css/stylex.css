@@ -54,19 +54,19 @@ body {
     }
 
     #AppInfo {
-        margin-bottom: 1rem !important;
+        margin-bottom: 4.5rem !important;
     }
     
     #AppHlt {
-        margin-bottom: 23rem;
+        margin-bottom: 30rem !important;
     }
     
     #Father {
-        margin-bottom: 13rem;
+        margin-bottom: 20rem !important;
     }
     
     #Mother {
-        margin-bottom: 8rem;
+        margin-bottom: 15rem !important;
     }
 }
 
