@@ -11,7 +11,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     * {
-        font-size: 65.5% !important;
+        font-size: 62.5% !important;
     }
     body {
         background-color: #fff;
@@ -30,7 +30,7 @@ body {
     }
 
     .tab {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
     }
 
     .form-control {
@@ -41,6 +41,10 @@ body {
         padding: .8rem !important;
     }
 
+    .tablink-rounded {
+        font-size: 1rem !important;
+    }
+
     .btn {
         font-size: 1.2rem !important;
     }
@@ -49,8 +53,20 @@ body {
         font-size: 3.5rem !important;
     }
 
-    .page-link {
-        font-size: 1.2rem !important;
+    #AppInfo {
+        margin-bottom: 1rem !important;
+    }
+    
+    #AppHlt {
+        margin-bottom: 23rem;
+    }
+    
+    #Father {
+        margin-bottom: 13rem;
+    }
+    
+    #Mother {
+        margin-bottom: 8rem;
     }
 }
 
